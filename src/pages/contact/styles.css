@@ -1,0 +1,29 @@
+
+article {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+article ul {
+    margin-top: 15px;
+    list-style: none;
+}
+
+article ul li {
+    margin-top: 10px;
+}
+
+article ul li span {
+    color: #606060;
+    font-size: 14px;
+}
+
+article ul li .item-contact {
+    text-decoration: none;
+    color: #606060;
+    margin-left: 10px;
+    font-size: 14px;
+}
+

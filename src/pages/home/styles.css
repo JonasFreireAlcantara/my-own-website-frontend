@@ -1,0 +1,29 @@
+article {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+article strong {
+    width: 100%;
+    margin-top: 15px;
+    font-weight: lighter;
+    font-size: 26px;
+    color: #606060;
+}
+
+article p {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #606060;
+    text-align: justify;
+}
+
+article img {
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 4px;
+}
