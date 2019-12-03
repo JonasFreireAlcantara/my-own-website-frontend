@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Navigation from '../../components/navigation';
 
-import sun from '../../assets/sun.jpg';
+import jonas from '../../assets/jonas.jpg';
 
 import './styles.css';
 
@@ -21,7 +21,8 @@ class Home extends Component {
                     Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales 
                     nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci 
                     ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-                    <img src={sun} alt='Jonas' />
+                    <img src={jonas} alt='Jonas' />
+                
                 </article>
 
             </div>

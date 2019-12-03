@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import api from '../../services/api';
 
 import Navigation from '../../components/navigation';
-import sun from '../../assets/sun.jpg';
 
 import './styles.css';
 
@@ -34,18 +33,20 @@ export default class Projects extends Component {
                 <article>
                     <strong>Projetos</strong>
                     
-                    {projects != null ? projects.map( project => (
-                                        <section className="item-project" key={project.title}>
-                                            <div className="project-txt">
-                                                <strong>{project.title}</strong>
-                                                <p>{project.description}</p>
-                                                <a href={project.url}>Acessar</a>
-                                            </div>
-                                            <div className="project-img">
-                                                <img src={sun} alt="img-project" />
-                                            </div>
-                                        </section>
-                                        )
+                    {projects != null ? projects.map( project => {
+                        
+                                        return (
+                                            <section className="item-project" key={project.title}>
+                                                <div className="project-txt">
+                                                    <strong>{project.title}</strong>
+                                                    <p>{project.description}</p>
+                                                    <a href={project.url}>Acessar</a>
+                                                </div>
+                                                <div className="project-img">
+                                                    <img src={project.thumbnail_url} alt="project" />
+                                                </div>
+                                            </section>
+                                        )}
                     ) : ''}
 
                 </article>
