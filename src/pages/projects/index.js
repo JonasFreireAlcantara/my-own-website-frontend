@@ -40,7 +40,7 @@ export default class Projects extends Component {
                                                 <div className="project-txt">
                                                     <strong>{project.title}</strong>
                                                     <p>{project.description}</p>
-                                                    <a href={project.url}>Acessar</a>
+                                                    <a href={project.url} target="_blank" rel="noopener noreferrer">Acessar</a>
                                                 </div>
                                                 <div className="project-img">
                                                     <img src={project.thumbnail_url} alt="project" />
