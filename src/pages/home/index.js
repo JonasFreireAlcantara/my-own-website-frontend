@@ -19,22 +19,24 @@ class Home extends Component {
                     pela Universidade Federal Rural de Pernambuco, também conhecida como <i>ruralinda</i>.</p>
 
                     <p>Quando pequeno, meu sonho era ser um inventor, descobri que hoje em dia isso não é tão
-                    presente na sociedade, mas percebi que engenharia era um tipo de inventor disfarçado em tão
+                    presente na sociedade, mas percebi que o engenheiro era um tipo de inventor disfarçado, moderno, então
                     começei a aspirar por engenharia, me dediquei bastante no ensino médio à Química, Física e Matemática,
                     fiz o vestibular, e fui mal, passei mais um ano estudando, me dedicando bastante, foi quando comecei
                     a conhecer uma linguagem de programação (Script) chamada Shell Script, quando vi um tutorial para começar
-                    a usá-la percebi a potencialidade que tinha nas minhas mãos, a única coisa necessária era lógica,
-                    criatividade e tempo, e assim você poderia fazer coisas espetaculares, criar coisas realmente,
-                    então descobri que a programação é mais atual forma de invenção, um programador hoje em dia pode
-                    ser chamado de inventor.</p>
+                    a usá-la percebi a potencialidade que tinha nas mãos, a única coisa necessária era lógica,
+                    criatividade e tempo, e assim você poderia fazer coisas espetaculares, criar coisas realmente
+                    impactantes, então descobri que a programação é a mais atual forma de invenção, um programador
+                    hoje em dia pode ser chamado de inventor.</p>
 
                     <p>Foi aí que eu começei a deixar engenharia de lado e focar em Tecnologia da Informação, passei
-                    no vestibular e desde então, só tenho me apaixonado pela área e as possibilidades de melhoria
-                    para o mundo que ele possui.</p>
+                    no vestibular e desde então só tenho me apaixonado pela área e as possibilidades de melhoria
+                    para o mundo que ela possui.</p>
 
                     <p>Este site tem por objetivo apresentar os projetos que fiz, tanto projetos pessoais como acadêmicos,
-                    espero que gostem do meu trabalho, se tiverem alguma sugestão de melhoria, por favor, estarei esperando
-                    ansioso por críticas, contrutivas hein, sejam bem vindos !</p>
+                    espero que gostem do meu trabalho, se tiverem alguma sugestão de melhoria, fiquem à vontade para enviar,
+                    críticas são sempre muito boas, as contrutivas hein.</p>
+                    
+                    <p id="welcome-phrase">Sejam bem vindos !</p>
 
                     <img src={jonas} alt='Jonas' />
                 
