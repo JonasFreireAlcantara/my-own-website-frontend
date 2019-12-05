@@ -8,6 +8,7 @@
 #home article strong {
     width: 100%;
     margin-top: 15px;
+    margin-bottom: 5px;
     font-weight: lighter;
     font-size: 26px;
     color: #606060;
@@ -15,10 +16,11 @@
 
 #home article p {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 14px;
     color: #606060;
     text-align: justify;
+    text-indent: 25px;
 }
 
 #home article img {
