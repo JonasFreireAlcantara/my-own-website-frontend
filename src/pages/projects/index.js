@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { MoonLoader } from 'react-spinners';
+
 import api from '../../services/api';
 
 import Navigation from '../../components/navigation';
@@ -13,6 +15,7 @@ export default class Projects extends Component {
 
         this.state = {
             projects: null,
+            projectsLoading: true,
         }
     }
 
@@ -20,11 +23,14 @@ export default class Projects extends Component {
         const object = await api.get('/projects');
         const { projects } = object.data;
         
-        this.setState({ projects });
+        this.setState({ 
+            projects,
+            projectsLoading: false,
+        });
     }
 
     render() {
-        const projects = this.state.projects;
+        const { projects, projectsLoading } = this.state;
 
         return(
             <div id="projects">
@@ -33,21 +39,26 @@ export default class Projects extends Component {
                 <article>
                     <strong>Projetos</strong>
                     
-                    {projects != null ? projects.map( project => {
-                        
-                                        return (
-                                            <section className="item-project" key={project.title}>
-                                                <div className="project-txt">
-                                                    <strong>{project.title}</strong>
-                                                    <p>{project.description}</p>
-                                                    <a href={project.url} target="_blank" rel="noopener noreferrer">Acessar</a>
-                                                </div>
-                                                <div className="project-img">
-                                                    <img src={project.thumbnail_url} alt="project" />
-                                                </div>
-                                            </section>
-                                        )}
-                    ) : ''}
+                    {projectsLoading && 
+                        <div id="projects-spinner-loader">
+                            <MoonLoader loading={true}
+                                size={45} />
+                        </div>
+                    }
+
+                    { !projectsLoading && projects && projects.map( project => (
+                            <section className="item-project" key={project.title}>
+                                <div className="project-txt">
+                                    <strong>{project.title}</strong>
+                                    <p>{project.description}</p>
+                                    <a href={project.url} target="_blank" rel="noopener noreferrer">Acessar</a>
+                                </div>
+                                <div className="project-img">
+                                    <img src={project.thumbnail_url} alt="project" />
+                                </div>
+                            </section>
+                        ))
+                    }
 
                 </article>
             </div>
