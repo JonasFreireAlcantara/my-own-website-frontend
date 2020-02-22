@@ -54,7 +54,7 @@ export default class Projects extends Component {
                                     <a href={project.url} target="_blank" rel="noopener noreferrer">Acessar</a>
                                 </div>
                                 <div className="project-img">
-                                    <img src={project.thumbnail_url} alt="project" />
+                                    <a href={project.thumbnail_url}><img src={project.thumbnail_url} alt="project" /></a>
                                 </div>
                             </section>
                         ))
